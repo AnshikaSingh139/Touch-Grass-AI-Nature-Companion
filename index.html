@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Grass | Your Nature Companion</title>
+    <meta name="description" content="Take a break from screens, explore nature, and build healthier outdoor habits.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="#home">🌿 touch grass<span>.</span></a>
+        <nav>
+            <a href="#challenges">Challenges</a>
+            <a href="#nature-guide">Nature Guide</a>
+            <a href="#journal">My Journal</a>
+        </nav>
+        <a href="#challenges" class="nav-button">Go outside ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">A LITTLE LESS SCREEN. A LITTLE MORE GREEN.</span>
+                <h1>Your world is<br>waiting <span>outside.</span></h1>
+                <p>
+                    Take a breath, step into nature, and rediscover
+                    the little things happening beyond your screen.
+                </p>
+                <a href="#challenges" class="primary-button">
+                    Start your outdoor journey →
+                </a>
+                <div class="hero-note">
+                    <span class="live-dot"></span>
+                    Your next adventure starts with one small step.
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Illustration of a peaceful green landscape">
+                <div class="sun"></div>
+                <div class="mountain mountain-back"></div>
+                <div class="mountain mountain-front"></div>
+                <div class="hill hill-back"></div>
+                <div class="hill hill-front"></div>
+                <div class="tree tree-one">♣</div>
+                <div class="tree tree-two">♣</div>
+                <div class="art-label">
+                    <span>✳</span>
+                    Nature is calling
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Your outdoor progress">
+            <div class="stat">
+                <span class="stat-icon">🌱</span>
+                <div>
+                    <strong id="points">0</strong>
+                    <p>Nature points</p>
+                </div>
+            </div>
+            <div class="stat">
+                <span class="stat-icon">✓</span>
+                <div>
+                    <strong id="completed-count">0</strong>
+                    <p>Challenges completed</p>
+                </div>
+            </div>
+            <div class="stat">
+                <span class="stat-icon">⏱</span>
+                <div>
+                    <strong id="minutes">0 min</strong>
+                    <p>Time outdoors logged</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="challenges">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">SMALL STEPS, BIG DIFFERENCE</span>
+                    <h2>Your outdoor challenges</h2>
+                    <p>Choose a challenge. Leave your screen behind. Come back to log it.</p>
+                </div>
+                <span class="date-tag">🌿 Every step counts</span>
+            </div>
+
+            <div class="challenge-grid" id="challenge-grid">
+                <!-- Challenges are added by JavaScript -->
+            </div>
+        </section>
+
+        <section class="guide-section" id="nature-guide">
+            <div class="guide-intro">
+                <span class="eyebrow">MEET YOUR NATURE COMPANION</span>
+                <h2>Not sure what to do outside?</h2>
+                <p>Tell us how you're feeling and how much time you have.
+                   Get an outdoor activity idea made for your moment.</p>
+                <div class="privacy-note">
+                    <span>🔒</span>
+                    <span>Your choices stay in this browser. No account needed.</span>
+                </div>
+            </div>
+
+            <div class="guide-card">
+                <label for="mood">How are you feeling?</label>
+                <select id="mood">
+                    <option value="stressed">Stressed or overwhelmed</option>
+                    <option value="bored">Bored and need something fun</option>
+                    <option value="curious">Curious about nature</option>
+                    <option value="energetic">Energetic and ready to move</option>
+                    <option value="calm">Calm and want some peace</option>
+                </select>
+
+                <label for="time">How much time do you have?</label>
+                <select id="time">
+                    <option value="5">5 minutes</option>
+                    <option value="10" selected>10 minutes</option>
+                    <option value="20">20 minutes</option>
+                    <option value="30">30 minutes or more</option>
+                </select>
+
+                <button class="primary-button full-button" id="suggest-button">
+                    Find my outdoor activity ✨
+                </button>
+
+                <div class="suggestion-result" id="suggestion-result" aria-live="polite">
+                    <span class="result-icon">🌳</span>
+                    <p>Your next little adventure is waiting.</p>
+                </div>
+                <p class="disclaimer">Starter activity recommender — not yet connected to an AI model.</p>
+            </div>
+        </section>
+
+        <section class="section journal-section" id="journal">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOUR LITTLE DISCOVERIES</span>
+                    <h2>Nature journal 📓</h2>
+                    <p>What did you notice when you stepped outside?</p>
+                </div>
+            </div>
+
+            <form id="journal-form" class="journal-form">
+                <label for="journal-entry">Write about your discovery</label>
+                <textarea id="journal-entry" maxlength="500"
+                    placeholder="I noticed a tiny bird sitting on a branch..." required></textarea>
+                <button type="submit" class="primary-button">Save discovery +</button>
+            </form>
+
+            <div id="journal-list" class="journal-list"></div>
+        </section>
+
+        <section class="closing">
+            <span>🌼</span>
+            <h2>The best things aren't always online.</h2>
+            <p>Close this tab. Open your door. See what you discover.</p>
+            <a href="#challenges" class="closing-link">One more little adventure →</a>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#home">🌿 touch grass<span>.</span></a>
+        <p>Made for the love of the real world.</p>
+    </footer>
+
+</body>
+</html>
